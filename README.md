@@ -1,9 +1,3 @@
-<!--
-  Esta página la lee un alumno de SinergIA por primera vez.
-  Tono amigable, cero jerga. Mantener identidad: Juan Lara.
-  Ver "Reglas de copy público" en praxis-dev/CLAUDE.md.
--->
-
 # Praxis
 
 > Hecho por **Juan Lara** · Para la comunidad **SinergIA**
@@ -55,12 +49,12 @@ Cuando termine, recarga la ventana del editor: `Cmd/Ctrl + Shift + P` → escrib
 
 2. **Verifica tu membresía.** El panel te pide tu correo de SinergIA. Escríbelo y dale a **Verificar**. Praxis confirma que eres miembro y te abre el dashboard.
 
-3. **Activa Praxis en tu proyecto.** Abre la carpeta donde quieres crear tu app (puede estar vacía). En el panel de Praxis verás un botón grande **INICIAR**. Dale click.
+3. **Activa Praxis en tu proyecto.** Abre la carpeta donde quieres crear tu app (puede estar vacía o tener archivos previos). Apenas verifiques tu membresía, el panel te muestra una pantalla de bienvenida con un solo botón grande **START** al centro. Dale click — Praxis prepara todo en menos de un minuto. Después de eso, esa pantalla desaparece para siempre y queda el dashboard normal.
 
 4. **¡Listo!** En menos de un minuto Praxis te dejó:
    - El proyecto Next.js completo configurado.
    - Un archivo `CLAUDE.md` con instrucciones para que Claude trabaje en tu codebase.
-   - 7 habilidades activas de inicio (brief, prp, bucle-agentico, frontend-design, playwright-cli, skill-creator y build-with-agent-team).
+   - 8 skills activas de inicio (brief, prp, build-with-agent-team, bucle-agentico, praxis-init, frontend-design, playwright-cli y skill-creator).
    - Conexiones automáticas con Next DevTools y Playwright.
    - Un `README.md` en la raíz con los siguientes pasos (`npm install`, configurar tu `.env.local`, `npm run dev`).
 
@@ -81,13 +75,31 @@ En cualquiera de los dos casos, click en el botón → se descarga la versión m
 
 ---
 
+## ¿Prefieres usar Codex o Gemini en lugar de Claude?
+
+Praxis trabaja con tres agentes de IA: **Claude Code** (por defecto), **OpenAI Codex** y **Google Gemini**. Cambias de uno a otro con un click.
+
+En la parte de arriba del panel verás un botón nuevo (icono de dos flechas en X) entre el botón de Actualizar y el de Refrescar. Click en ese botón y aparece un menú con tres opciones. Eliges la que quieres y Praxis adapta tu proyecto al instante:
+
+- Renombra `.claude/` a `.agents/` (Codex) o `.gemini/` (Gemini).
+- Renombra `CLAUDE.md` a `AGENTS.md` o `GEMINI.md`.
+- Reescribe las referencias internas de las skills para que apunten a la nueva carpeta.
+
+Cero cambios manuales, cero pasos en terminal. Si después quieres volver a Claude, presionas el botón otra vez y todo regresa exacto como estaba.
+
+> ✅ **El switch respeta tus ediciones**: si modificaste un archivo de Praxis, el switch lo renombra junto con la carpeta pero **no toca su contenido**. Solo se reescriben referencias internas en archivos que coinciden byte-exact con la copia que Praxis instaló. En tu `CLAUDE.md` raíz, las refs solo se traducen dentro de los marcadores `<!-- PRAXIS:*_START/END -->` que Praxis genera — cualquier prose tuya fuera de esos marcadores queda intacta.
+
+> 💡 Las conexiones (MCPs) de `.mcp.json` siguen siendo de Claude Code. Para usar MCPs con Codex o Gemini, configúralos según la documentación oficial de cada proveedor — Praxis no los migra entre formatos.
+
+---
+
 ## ¿Y si ya tengo un proyecto que estaba trabajando?
 
 Praxis sabe distinguir cuándo tu carpeta está vacía y cuándo ya tienes archivos. Si abres un proyecto que ya tenía cosas tuyas (un `CLAUDE.md` propio, un `README.md`, código en `src/`, etc.):
 
 - Praxis te pregunta antes de tocar nada.
 - **No se sobrescribe ningún archivo que ya tengas.** Tu `CLAUDE.md`, tu `README.md`, tu código quedan intactos byte por byte.
-- Solo te agrega lo que falta: las habilidades en `.claude/skills/` que no tengas y las conexiones (MCPs) en `.mcp.json` que no estén configuradas.
+- Solo te agrega lo que falta: las skills en `.claude/skills/` que no tengas y las conexiones (MCPs) en `.mcp.json` que no estén configuradas.
 
 Es seguro probarlo en un proyecto que ya estés desarrollando.
 
@@ -109,7 +121,7 @@ Cuéntame en SinergIA. La comunidad probablemente ya pasó por lo mismo.
 
 ---
 
-## ¿Tienes dudas?
+## ¿Tienes dudas o ideas?
 
 - 💙 La **comunidad de SinergIA** en Skool: https://www.skool.com/sinergia
 - 🐛 Para reportar bugs: [GitHub Issues del repo público](https://github.com/juanlara-aidev/praxis/issues)
