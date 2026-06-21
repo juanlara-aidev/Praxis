@@ -9,7 +9,7 @@
 Necesitas dos cosas:
 
 1. Un editor de código instalado: **VS Code**, **Cursor**, **Windsurf** o **Antigravity**.
-2. Tu correo de SinergIA a la mano (con el que entras a Skool).
+2. Tu cuenta de SinergIA (la misma con la que entras a la comunidad).
 
 Eso es todo.
 
@@ -47,14 +47,14 @@ Cuando termine, recarga la ventana del editor: `Cmd/Ctrl + Shift + P` → escrib
 
 1. **Abre tu editor.** Vas a ver un nuevo ícono ⚡ en la barra lateral de la izquierda. Dale click — se abre el panel de Praxis.
 
-2. **Verifica tu membresía.** El panel te pide tu correo de SinergIA. Escríbelo y dale a **Verificar**. Praxis confirma que eres miembro y te abre el dashboard.
+2. **Inicia sesión con SinergIA.** El panel te muestra un botón **Sign in with SinergIA**. Dale click: se abre tu navegador, inicias sesión con tu cuenta de SinergIA (si ya tienes la sesión abierta, ni te lo pide) y el panel se desbloquea solo. Praxis confirma que tu membresía está activa y te abre el dashboard.
 
-3. **Activa Praxis en tu proyecto.** Abre la carpeta donde quieres crear tu app (puede estar vacía o tener archivos previos). Apenas verifiques tu membresía, el panel te muestra una pantalla de bienvenida con un solo botón grande **START** al centro. Dale click — Praxis prepara todo en menos de un minuto. Después de eso, esa pantalla desaparece para siempre y queda el dashboard normal.
+3. **Activa Praxis en tu proyecto.** Abre la carpeta donde quieres crear tu app (puede estar vacía o tener archivos previos). Apenas inicies sesión, el panel te muestra una pantalla de bienvenida con un solo botón grande **START** al centro. Dale click — Praxis prepara todo en menos de un minuto. Después de eso, esa pantalla desaparece para siempre y queda el dashboard normal.
 
 4. **¡Listo!** En menos de un minuto Praxis te dejó:
    - El proyecto Next.js completo configurado.
    - Un archivo `CLAUDE.md` con instrucciones para que Claude trabaje en tu codebase.
-   - 8 skills activas de inicio (brief, prp, build-with-agent-team, bucle-agentico, praxis-init, frontend-design, playwright-cli y skill-creator).
+   - 9 skills activas de inicio (brief, prp, build-with-agent-team, bucle-agentico, praxis-init, infra-vps, frontend-design, playwright-cli y skill-creator).
    - Conexiones automáticas con Next DevTools y Playwright.
    - Un `README.md` en la raíz con los siguientes pasos (`npm install`, configurar tu `.env.local`, `npm run dev`).
 
