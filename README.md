@@ -75,21 +75,18 @@ En cualquiera de los dos casos, click en el botón → se descarga la versión m
 
 ---
 
-## ¿Prefieres usar Codex o Gemini en lugar de Claude?
+## ¿Usas Codex, Cursor, Windsurf o Copilot en vez de Claude?
 
-Praxis trabaja con tres agentes de IA: **Claude Code** (por defecto), **OpenAI Codex** y **Google Gemini**. Cambias de uno a otro con un click.
+No tienes que elegir ni cambiar nada. Cuando inicias Praxis en un proyecto, te deja **las dos carpetas listas desde el principio**:
 
-En la parte de arriba del panel verás un botón nuevo (icono de dos flechas en X) entre el botón de Actualizar y el de Refrescar. Click en ese botón y aparece un menú con tres opciones. Eliges la que quieres y Praxis adapta tu proyecto al instante:
+- `.claude/` con `CLAUDE.md` — para **Claude Code**.
+- `.agents/` con `AGENTS.md` — el estándar que entienden **OpenAI Codex, Cursor, Windsurf, GitHub Copilot y Amp**.
 
-- Renombra `.claude/` a `.agents/` (Codex) o `.gemini/` (Gemini).
-- Renombra `CLAUDE.md` a `AGENTS.md` o `GEMINI.md`.
-- Reescribe las referencias internas de las skills para que apunten a la nueva carpeta.
+Las dos tienen las mismas skills y el mismo contexto, así que abres tu proyecto con el agente que prefieras y todo funciona igual, al mismo tiempo. No hay botón que presionar ni pasos en terminal.
 
-Cero cambios manuales, cero pasos en terminal. Si después quieres volver a Claude, presionas el botón otra vez y todo regresa exacto como estaba.
+> 💡 Tú trabajas sobre `.claude/` (y tu `CLAUDE.md`): es la copia principal. La carpeta `.agents/` se mantiene sola, en espejo, cada vez que Praxis actualiza algo.
 
-> ✅ **El switch respeta tus ediciones**: si modificaste un archivo de Praxis, el switch lo renombra junto con la carpeta pero **no toca su contenido**. Solo se reescriben referencias internas en archivos que coinciden byte-exact con la copia que Praxis instaló. En tu `CLAUDE.md` raíz, las refs solo se traducen dentro de los marcadores `<!-- PRAXIS:*_START/END -->` que Praxis genera — cualquier prose tuya fuera de esos marcadores queda intacta.
-
-> 💡 Las conexiones (MCPs) de `.mcp.json` siguen siendo de Claude Code. Para usar MCPs con Codex o Gemini, configúralos según la documentación oficial de cada proveedor — Praxis no los migra entre formatos.
+> 💡 Las conexiones (MCPs) de `.mcp.json` son de Claude Code. Para usar MCPs con Codex u otro agente, configúralos según la documentación oficial de cada uno — Praxis no los migra entre formatos.
 
 ---
 
