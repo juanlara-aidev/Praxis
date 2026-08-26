@@ -54,7 +54,7 @@ Cuando termine, recarga la ventana del editor: `Cmd/Ctrl + Shift + P` → escrib
 4. **¡Listo!** En menos de un minuto Praxis te dejó:
    - El proyecto Next.js completo configurado.
    - Un archivo `CLAUDE.md` con instrucciones para que Claude trabaje en tu codebase.
-   - 9 skills activas de inicio (brief, prp, build-with-agent-team, bucle-agentico, praxis-init, infra-vps, frontend-design, playwright-cli y skill-creator).
+   - 11 skills activas de inicio (brief, prp, build-with-agent-team, bucle-agentico, praxis-init, graphify, infra-vps, frontend-design, playwright-cli, skill-creator y agent-praxis).
    - Conexiones automáticas con Next DevTools y Playwright.
    - Un `README.md` en la raíz con los siguientes pasos (`npm install`, configurar tu `.env.local`, `npm run dev`).
 
