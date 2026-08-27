@@ -120,7 +120,7 @@ Cuéntame en SinergIA. La comunidad probablemente ya pasó por lo mismo.
 
 ## ¿Tienes dudas o ideas?
 
-- 💙 La **comunidad de SinergIA**: https://app.snrgia.ai
+- 💙 La **comunidad de SinergIA**: https://snrgia.ai
 - 🐛 Para reportar bugs: [GitHub Issues del repo público](https://github.com/juanlara-aidev/praxis/issues)
 
 ---
