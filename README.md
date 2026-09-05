@@ -86,7 +86,7 @@ Las dos tienen las mismas skills y el mismo contexto, así que abres tu proyecto
 
 > 💡 Tú trabajas sobre `.claude/` (y tu `CLAUDE.md`): es la copia principal. La carpeta `.agents/` se mantiene sola, en espejo, cada vez que Praxis actualiza algo.
 
-> 💡 Al iniciar desde Launchpad, Praxis lleva las conexiones (MCPs) autorizadas en `.mcp.json` a Claude Code, Codex y OpenCode (GLM/DeepSeek) para ese lanzamiento. No toca la configuración global de tus agentes ni muestra secretos. Si una conexión no es compatible, Doctor te dice cuál fue omitida y cómo repararla.
+> 💡 Al iniciar desde Launchpad, GLM y DeepSeek abren el **panel visual de Claude Code** ya configurado para ese modelo (tu llave vive cifrada en el editor, nunca en tu proyecto). Codex abre su terminal con las mismas conexiones. Praxis no toca la configuración global de tus agentes ni muestra secretos. Si una conexión no es compatible, Doctor te dice cuál fue omitida y cómo repararla.
 
 ---
 
