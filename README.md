@@ -90,6 +90,60 @@ Las dos tienen las mismas skills y el mismo contexto, así que abres tu proyecto
 
 ---
 
+## Perfiles de cuenta: trabaja con la cuenta de IA de cada cliente
+
+Si trabajas para varios clientes y cada uno tiene su propia cuenta de Claude o de Codex, un **perfil** te deja usar la de cada quien sin mezclarlas. El trabajo de un cliente gasta en la cuenta del cliente, y el tuyo sigue gastando en la tuya. Tus skills, tus ajustes y tu historial de sesiones se comparten entre perfiles, así que no tienes que volver a configurar nada.
+
+Si no creas ningún perfil, no cambia nada: Praxis se ve y funciona igual que siempre, con tu cuenta de siempre (aparece como **Predeterminado**).
+
+### Cómo crear un perfil
+
+1. Abre el menú **⋯** del panel de Praxis y elige **Cuentas de IA…**.
+2. Elige **Crear perfil…** y ponle el nombre del cliente. Usa letras y números, mínimo 2 caracteres.
+3. Listo. En la parte de arriba del panel aparece un botón con la inicial del perfil. Ahí vive todo lo demás.
+
+### Cómo iniciar la sesión del cliente
+
+Abre el botón del perfil y elige **Iniciar sesión en Claude** o **Iniciar sesión en Codex**:
+
+- **Claude**: Praxis te muestra un enlace. Ábrelo en la computadora donde está la cuenta del cliente (puede ser la de otra persona), autoriza, copia el código que te da y pégalo en el cuadro que aparece. El código no se ve en pantalla.
+- **Codex**: Praxis te muestra un enlace y un código corto. Abre el enlace, escribe el código y autoriza. Si te pide activar el código de dispositivo, se activa en la seguridad de la cuenta de ChatGPT.
+
+Cuando termina, Praxis te avisa con el correo (enmascarado) y el plan de esa cuenta. Así sabes que entraste a la cuenta correcta.
+
+### Si prefieres importar una sesión que ya existe
+
+Con **Importar una sesión…** eliges si es de Claude o de Codex y señalas el archivo de la sesión. Praxis lo guarda en el perfil sin mostrártelo y te dice a qué cuenta pertenece. Si el archivo no es una sesión de ese programa, no se guarda nada.
+
+### Cómo atar un proyecto a un perfil
+
+Dentro del botón del perfil, elige **Usar siempre en este proyecto**. Desde ese momento, cada vez que abras esa carpeta, Praxis usa ese perfil sin que lo pidas. Esa atadura queda solo en tu computadora, no se escribe nada dentro del proyecto. Cuando quieras quitarla, usa **Desatar**.
+
+### Cómo cambiar de perfil en 2 clics
+
+Clic en el botón del perfil de arriba, clic en el perfil que quieres usar. El panel muestra el correo y el plan de cada cuenta, y las barras de uso son las de la cuenta que elegiste.
+
+### Qué cubre y qué no
+
+Un perfil cubre todo lo que Praxis lanza por ti: Claude y Codex desde el panel, los sub-agentes (los ayudantes que trabajan por ti), GLM y DeepSeek, el panel oficial de Claude Code (menos en Windows, ver abajo) y las terminales nuevas que abras en ese proyecto (las terminales son las ventanas donde se escriben comandos).
+
+Lo que **no** cubre:
+
+- **La extensión de Codex de VS Code.** Es de otra empresa y Praxis no puede cambiarle la cuenta. Sigue usando la cuenta de siempre.
+- **El panel oficial de Claude en Windows.** Ahí usa siempre tu cuenta predeterminada, porque Windows no deja que Praxis le cambie la cuenta. La terminal y los agentes de Praxis sí usan el perfil. En Mac, Linux y WSL el panel oficial sí usa el perfil.
+- **Las terminales que ya estaban abiertas.** Cierra esas terminales y abre una nueva después de cambiar de perfil.
+- **La barra de uso de Codex con una cuenta de perfil.** Sale solo cuando Codex responde en ese momento. Si no responde, ves que está conectado, sin barras.
+
+> 💡 Si en Windows ves que un ajuste que cambiaste dentro de un perfil no llega a tu cuenta de siempre, es normal: ahí algunos archivos se copian en vez de compartirse. Los cambios van de tu cuenta de siempre hacia el perfil, no al revés.
+
+### Si algo no sale
+
+- **"Todavía no encuentro Claude Code en esta computadora"**: lanza Claude desde el panel una vez y vuelve a intentar.
+- **"Algunos archivos de este perfil chocan con los de tu cuenta principal"**: no se cambió ni se perdió nada. Cuéntame en SinergIA y lo revisamos.
+- **Borrar un perfil** (**Borrar este perfil…**) elimina sus sesiones en esta computadora. Tus proyectos y tu cuenta de siempre no cambian.
+
+---
+
 ## ¿Y si ya tengo un proyecto que estaba trabajando?
 
 Praxis sabe distinguir cuándo tu carpeta está vacía y cuándo ya tienes archivos. Si abres un proyecto que ya tenía cosas tuyas (un `CLAUDE.md` propio, un `README.md`, código en `src/`, etc.):
