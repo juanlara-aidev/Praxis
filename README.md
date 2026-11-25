@@ -96,6 +96,8 @@ Si trabajas para varios clientes y cada uno tiene su propia cuenta de Claude o d
 
 Si no creas ningún perfil, no cambia nada: Praxis se ve y funciona igual que siempre, con tu cuenta de siempre (aparece como **Predeterminado**).
 
+Un perfil de cliente usa la cuenta de IA del cliente, pero **no sus conectores ni sus apps** (Gmail, Drive, Calendar, Notion… de su Claude o de su ChatGPT). Esos no se cargan dentro de su perfil, así que no ves ni tocas lo suyo por accidente. Los conectores de tu propia cuenta siguen en tu perfil predeterminado.
+
 ### Cómo crear un perfil
 
 1. Abre el menú **⋯** del panel de Praxis y elige **Cuentas de IA…**.
